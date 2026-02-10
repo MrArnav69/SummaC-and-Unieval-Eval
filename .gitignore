@@ -1,0 +1,37 @@
+# Large files
+miniconda.sh
+*.ckpt
+*.pth
+*.bin
+*.safetensors
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+miniconda3/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data files (optional - comment out if you want to track them)
+# summaries_*.json
+
+# Results
+results/*.csv
+results/*.json
