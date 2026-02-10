@@ -27,6 +27,5 @@ spacy>=3.4.0
 pathlib2>=2.3.0
 python-dateutil>=2.8.0
 
-# GPU acceleration (optional but recommended)
-# Note: Install torch with CUDA support for best performance
-# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# Setup script dependencies
+requests>=2.25.0
