@@ -1,0 +1,37 @@
+# Requirements for AlignScore Evaluation
+# Compatible with torch<2.0 (separate environment for AlignScore)
+
+# Core ML/AI libraries - EXACT versions required for AlignScore
+torch==1.12.1
+torchvision==0.13.1
+torchaudio==0.12.1
+
+# AlignScore specific dependencies
+protobuf<=3.20
+pytorch-lightning<2,>=1.7.7
+datasets<3,>=2.3.2
+jsonlines<3,>=2.0.0
+
+# Text processing - compatible versions
+spacy>=3.4.0,<3.8.0
+nltk>=3.7,<4.0
+
+# Data processing
+pandas>=1.5.0
+numpy>=1.21.0,<2.0.0
+tqdm>=4.64.0
+
+# Scientific computing
+scikit-learn>=1.1.0,<2.0
+scipy>=1.8.0,<2.0
+
+# Utilities
+pathlib2>=2.3.0
+python-dateutil>=2.8.0
+
+# Installation notes:
+# 1. Create separate environment: conda create -n alignscore python=3.8
+# 2. Install torch first: pip install torch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 --index-url https://download.pytorch.org/whl/cpu
+# 3. Install spacy model: python -m spacy download en_core_web_sm
+# 4. Install this file: pip install -r requirements_alignscore.txt
+# 5. Install AlignScore: cd AlignScore && pip install .
